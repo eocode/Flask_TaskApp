@@ -1,0 +1,3 @@
+INFO  started: Metals version 0.8.3 in workspace 'C:\Users\elias\Desktop\Task-with-Python-Flask'
+INFO  time: initialize in 0.49s
+WARN  no build tool detected in workspace 'C:\Users\elias\Desktop\Task-with-Python-Flask'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
