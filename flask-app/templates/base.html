@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Flask app |{% endblock %}</title>
 </head>
+<header>
+    {% include 'navbar.html' %}
+</header>
 <body>
     {% block content %} {% endblock %}
 </body>
