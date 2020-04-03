@@ -55,3 +55,6 @@ def hello():
 
 # Templates
 JinJa 2
+https://jinja.palletsprojects.com/en/2.11.x/
+
+Expandir un diccionario con **variables
