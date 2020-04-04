@@ -39,18 +39,30 @@ Enable debug if needs
   <small><p>Run App</p></small>
 </div>
 
-## Deploy and Connect to DataStore
-### Requirements
-
-* Install Google Cloud SDK https://cloud.google.com/sdk/docs/quickstarts
-
-Next execute next command:
-
-`gcloud init`
-`gcloud auth login`
-
 ## Preview
 <div align="center">
   <img src="images/Screenshot_2.png">
   <small><p>Task App</p></small>
 </div>
+
+## Deploy and Connect to GCloud DataStore
+### Requirements
+
+* Install Google Cloud SDK https://cloud.google.com/sdk/docs/quickstarts
+* Create a Project
+* Active FireStore mode DataStore
+
+Next execute next command:
+
+`gcloud init`
+`gcloud auth login`
+`gcloud config set project PROJECT_ID`
+`gcloud auth application-default login`
+
+#### FireStore
+<div align="center">
+  <img src="images/FireStore.png">
+  <small><p>FireStore Capture</p></small>
+</div>
+
+
