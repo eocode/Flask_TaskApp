@@ -29,3 +29,14 @@ Run development server
 
 Enable debug if needs
 > `export FLASK_DEBUG=1`
+
+<div align="center">
+  <img src="images/Screenshot_1.png">
+  <small><p>Run App</p></small>
+</div>
+
+## Preview
+<div align="center">
+  <img src="images/Screenshot_2.png">
+  <small><p>Task App</p></small>
+</div>
