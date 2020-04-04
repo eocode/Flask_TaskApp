@@ -17,10 +17,6 @@
         <a href="{{ url_for('index') }}">Ir a inicio</a>
     {% endif %}
 
-    <div class="container">
-    {{ wtf.quick_form(login_form) }}
-    </div>
-
     <hr/>
     <ul>
     {% for todo in todos %} {{ macros.render_todo(todo) }} {% endfor %}
