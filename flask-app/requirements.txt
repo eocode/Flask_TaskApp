@@ -1,2 +1,3 @@
 flask
-Flask-Bootstrap4
+flask-bootstrap
+flask-wtf
