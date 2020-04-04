@@ -12,6 +12,8 @@
   - [Request y Response](#request-y-response)
 - [Templates](#templates)
   - [Hot reload](#hot-reload)
+- [Extensiones](#extensiones)
+  - [Flask-Bootstrap](#flask-bootstrap)
 
 # Fundamentos
 
@@ -64,3 +66,12 @@ Expandir un diccionario con **variables
 
 Para aplicar los cambios sin que afecte el cache teclear en Chrome:
 > CTRL + SHIFT + R
+
+# Extensiones
+
+## Flask-Bootstrap
+
+<div align="center">
+  <img src="images/bootstrap.png">
+  <small><p>Bootstrap</p></small>
+</div>
