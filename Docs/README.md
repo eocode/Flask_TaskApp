@@ -14,6 +14,7 @@
   - [Hot reload](#hot-reload)
 - [Extensiones](#extensiones)
   - [Flask-Bootstrap](#flask-bootstrap)
+  - [Desarrollo](#desarrollo)
 
 # Fundamentos
 
@@ -75,3 +76,8 @@ Para aplicar los cambios sin que afecte el cache teclear en Chrome:
   <img src="images/bootstrap.png">
   <small><p>Bootstrap</p></small>
 </div>
+
+## Desarrollo
+
+**Blueprints:** Son una serie de rutas que podemos integrar en nuestra aplicación, pero desde otro directorio, es decir, permite modular la aplicación en pequeñas aplicaciones que hagan cosas específicas, como autenticación o el welcome.
+* Se crea un blueprint para tareas específicas y es más fácil de manejar 
