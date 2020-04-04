@@ -33,6 +33,16 @@
           >
         </li>
       </ul>
+
+      {% if current_user.is_authenticated %}
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('auth.logout') }}">
+              Cerrar sesión
+            </a>
+          </li>
+        </ul>
+      {% endif %}
     </div>
     <!-- /.navbar-collapse -->
   </div>

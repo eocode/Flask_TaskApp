@@ -16,7 +16,7 @@ class UserModel(UserMixin):
         self.password = user_data.password
 
     @staticmethod
-    def query(self, user_id):
+    def query(user_id):
         user_doc = get_user(user_id)
         user_data = UserData(
             username=user_doc.id,
