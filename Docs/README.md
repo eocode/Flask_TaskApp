@@ -11,6 +11,7 @@
   - [¿Qué es Flask?](#%c2%bfqu%c3%a9-es-flask)
   - [Request y Response](#request-y-response)
 - [Templates](#templates)
+  - [Hot reload](#hot-reload)
 
 # Fundamentos
 
@@ -58,3 +59,8 @@ JinJa 2
 https://jinja.palletsprojects.com/en/2.11.x/
 
 Expandir un diccionario con **variables
+
+## Hot reload
+
+Para aplicar los cambios sin que afecte el cache teclear en Chrome:
+> CTRL + SHIFT + R
