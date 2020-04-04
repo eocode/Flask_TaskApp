@@ -39,6 +39,16 @@ Enable debug if needs
   <small><p>Run App</p></small>
 </div>
 
+## Deploy and Connect to DataStore
+### Requirements
+
+* Install Google Cloud SDK https://cloud.google.com/sdk/docs/quickstarts
+
+Next execute next command:
+
+`gcloud init`
+`gcloud auth login`
+
 ## Preview
 <div align="center">
   <img src="images/Screenshot_2.png">

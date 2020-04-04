@@ -15,6 +15,12 @@
 - [Extensiones](#extensiones)
   - [Flask-Bootstrap](#flask-bootstrap)
   - [Desarrollo](#desarrollo)
+- [Códigos de estado HTTP](#c%c3%b3digos-de-estado-http)
+- [Protección CSRF](#protecci%c3%b3n-csrf)
+- [Bases de datoy y App Engine con Flask](#bases-de-datoy-y-app-engine-con-flask)
+  - [Bases de datos SQL](#bases-de-datos-sql)
+  - [Bases de datos NoSQL](#bases-de-datos-nosql)
+    - [DataStore](#datastore)
 
 # Fundamentos
 
@@ -70,7 +76,11 @@ Para aplicar los cambios sin que afecte el cache teclear en Chrome:
 
 # Extensiones
 
+Flask permite extender sus capacidades con extenciones
+
 ## Flask-Bootstrap
+
+https://pythonhosted.org/Flask-Bootstrap/
 
 <div align="center">
   <img src="images/bootstrap.png">
@@ -80,4 +90,42 @@ Para aplicar los cambios sin que afecte el cache teclear en Chrome:
 ## Desarrollo
 
 **Blueprints:** Son una serie de rutas que podemos integrar en nuestra aplicación, pero desde otro directorio, es decir, permite modular la aplicación en pequeñas aplicaciones que hagan cosas específicas, como autenticación o el welcome.
-* Se crea un blueprint para tareas específicas y es más fácil de manejar 
+* Se crea un blueprint para tareas específicas y es más fácil de manejar
+
+# Códigos de estado HTTP
+
+Códigos de estado
+
+<div align="center">
+  <img src="images/codes.gif">
+  <small><p>Flask Logo</p></small>
+</div>
+
+# Protección CSRF
+
+El CSRF (del inglés Cross-site request forgery o falsificación de petición en sitios cruzados) es un tipo de exploit malicioso de un sitio web en el que comandos no autorizados son transmitidos por un usuario en el cual el sitio web confía.
+
+<div align="center">
+  <img src="images/csrf.png">
+  <small><p>Flask Logo</p></small>
+</div>
+
+# Bases de datoy y App Engine con Flask
+
+## Bases de datos SQL
+Se compone de bases de datos con tablas y filas que contiene campos estructurados. No es muy flexible y mientras más compleja sea la base de datos más procesamiento necesitará
+
+* ORM Flask SQL Alchemy
+* https://flask-sqlalchemy.palletsprojects.com/en/2.x/
+
+## Bases de datos NoSQL
+Su composición es abierta, no estructurada, flexible a diferentes tipos de datos y no necesita demasiados recursos para ejecutarse, no necesitan una tabla fija como las BD relacionales y es altamente escalable a un bajo costo
+
+<div align="center">
+  <img src="images/datastore.png">
+  <small><p>DataStore Comparación</p></small>
+</div>
+
+
+### DataStore
+https://cloud.google.com/sdk
