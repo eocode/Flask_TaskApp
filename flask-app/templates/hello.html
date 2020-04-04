@@ -8,7 +8,7 @@
 
 {% block content %} 
     {% if username %}
-        <h1>Bienvenido {{ username | capitalize }}</h1>
+        <h1 class="text-center">Bienvenido {{ username | capitalize }}</h1>
     {% endif %}
     {% if user_ip %}
         <h3 class="text-center">Tú IP es {{ user_ip }}</h3>
