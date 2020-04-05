@@ -45,7 +45,7 @@ Enable debug if needs
 ## Preview
 <div align="center">
   <img src="images/Screenshot_2.png">
-  <small><p>Task App</p></small>
+  <small><p>Login app</p></small>
 </div>
 
 <div align="center">
