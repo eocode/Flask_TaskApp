@@ -23,7 +23,9 @@
     </div>
 
     <hr/>
-    <ul>
-    {% for todo in todos %} {{ macros.render_todo(todo) }} {% endfor %}
+    <ul class="list-group">
+        {% for todo in todos %} 
+            {{ macros.render_todo(todo, delete_form) }} 
+        {% endfor %}
     </ul>
 {% endblock %}
