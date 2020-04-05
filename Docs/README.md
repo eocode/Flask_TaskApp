@@ -13,7 +13,7 @@
 - [Templates](#templates)
   - [Hot reload](#hot-reload)
 - [Extensiones](#extensiones)
-  - [Flask-Bootstrap](#flask-bootstrap)
+  - [Flask-Bootstrap4](#flask-bootstrap4)
   - [Desarrollo](#desarrollo)
 - [Códigos de estado HTTP](#c%c3%b3digos-de-estado-http)
 - [Protección CSRF](#protecci%c3%b3n-csrf)
@@ -78,9 +78,9 @@ Para aplicar los cambios sin que afecte el cache teclear en Chrome:
 
 Flask permite extender sus capacidades con extenciones
 
-## Flask-Bootstrap
+## Flask-Bootstrap4
 
-https://pythonhosted.org/Flask-Bootstrap/
+https://bootstrap-flask.readthedocs.io/en/latest/basic.html#installation
 
 <div align="center">
   <img src="images/bootstrap.png">

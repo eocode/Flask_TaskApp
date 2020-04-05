@@ -2,7 +2,10 @@
 
 ## Python - Flask - Docs
 See info what do you need for this project
-* [Ver documentación](Docs/README.md)
+* [See docs project](Docs/README.md)
+* Python 3
+* Flask
+* Bootstrap 4
 
 ## How to run project
 
@@ -45,7 +48,12 @@ Enable debug if needs
   <small><p>Task App</p></small>
 </div>
 
-## Deploy and Connect to GCloud DataStore
+<div align="center">
+  <img src="images/Screenshot_3.png">
+  <small><p>Task App</p></small>
+</div>
+
+## Deploy and Connect to GCloud DataStore and AppEngine
 ### Requirements
 
 * Install Google Cloud SDK https://cloud.google.com/sdk/docs/quickstarts
@@ -54,10 +62,30 @@ Enable debug if needs
 
 Next execute next command:
 
+Initialize
+
 `gcloud init`
+
+Login
+
 `gcloud auth login`
+
+Configure
+
 `gcloud config set project PROJECT_ID`
+
+Default authentication in app
+
 `gcloud auth application-default login`
+
+Verify
+
+`gcloud config list`
+
+Deploy
+`gcloud app deploy app.yaml`
+
+`gcloud app browse`
 
 #### FireStore
 <div align="center">
