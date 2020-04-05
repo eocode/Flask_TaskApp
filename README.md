@@ -90,7 +90,7 @@ Deploy
 #### FireStore
 <div align="center">
   <img src="images/FireStore.png">
-  <small><p>FireStore Capture</p></small>
+  <small><p>FireStore</p></small>
 </div>
 
 
