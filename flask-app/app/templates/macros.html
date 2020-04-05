@@ -1,9 +1,21 @@
-{% import 'bootstrap/wtf.html' as wtf %}
+{% from 'bootstrap/form.html' import render_form, render_form_row %}
 {% macro render_todo(todo, delete_form, update_form) %}
-    <li class="list-group-item">
-        <span class="badge">{{ todo.to_dict().done }}</span>
-        Tarea: {{ todo.to_dict().description }}
-        {{ wtf.quick_form(delete_form, action=url_for('delete', todo_id=todo.id)) }}
-        {{ wtf.quick_form(update_form, action=url_for('update', todo_id=todo.id, done=todo.to_dict().done)) }}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Tarea: {{ todo.to_dict().description }}       
+        {% if todo.to_dict().done %}
+            <span class="ml-4 badge badge-success badge-pill">Terminado</span>
+        {% else %}
+            <span class="ml-4 badge badge-warning badge-pill">Pendiente</span>
+        {% endif %}
+        <hr/>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Acciones
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">{{ render_form(delete_form, button_map={'submit': 'danger'}, action=url_for('delete', todo_id=todo.id)) }}</a>
+                <a class="dropdown-item" href="#">{{ render_form(update_form, button_map={'submit': 'light'}, action=url_for('update', todo_id=todo.id, done=todo.to_dict().done)) }}</a>
+            </div>
+        </div>
     </li>
 {% endmacro %}

@@ -1,31 +1,37 @@
 {% extends 'base.html' %} 
 {% import 'macros.html' as macros %} 
-{% import'bootstrap/wtf.html' as wtf %} 
+{% from 'bootstrap/form.html' import render_form %}
 
 {% block title %} 
     {{ super() }} Bienvenido 
 {%endblock %} 
 
 {% block content %} 
+
     {% if username %}
-        <h1 class="text-center">Bienvenido {{ username | capitalize }}</h1>
-    {% endif %}
-    {% if user_ip %}
-        <h3 class="text-center">Tú IP es {{ user_ip }}</h3>
-        <hr />
-    {% else %}
-        <a href="{{ url_for('index') }}">Ir a inicio</a>
+        <div class="container">
+            <div class="media">
+                <img src="{{url_for('static', filename='images/logo.png' )}}" class="align-self-center mr-3" alt="Logo">
+                <div class="media-body">
+                <h5 class="mt-0 font-weight-bold">Bienvenido {{ username | capitalize }}</h5>
+                <p>Organiza tus tareas diarias con Spartan Task List.</p>
+                </div>
+            </div>
+        </div>
     {% endif %}
 
     <div class="container">
         <h2>Crea una nueva tarea</h2>
-        {{ wtf.quick_form(todo_form) }}
+        {{ render_form(todo_form, button_map={'submit': 'info'}) }}
     </div>
 
     <hr/>
-    <ul class="list-group">
-        {% for todo in todos %} 
-            {{ macros.render_todo(todo, delete_form, update_form) }} 
-        {% endfor %}
-    </ul>
+    <h3 class="text-center">Tareas pendientes</h3>
+    <div class="container">
+        <ul class="list-group">
+            {% for todo in todos %} 
+                {{ macros.render_todo(todo, delete_form, update_form) }} 
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}

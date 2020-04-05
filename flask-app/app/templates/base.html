@@ -1,14 +1,41 @@
-{% extends "bootstrap/base.html" %}
-{% block head %}
-    {{ super() }}
-    <title>{% block title %}Flask app |{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-{% endblock %}
+<!doctype html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-{% block body %}
+    {% block styles %}
+        <!-- Bootstrap CSS -->
+        {{ bootstrap.load_css() }}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% endblock %}
+
+    <title>Spartan Task</title>
+    {% endblock %}
+  </head>
+  <body>
     {% block navbar %}
         {% include 'navbar.html' %}
     {% endblock %}
+
+
+    {% if user_ip %}
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Tú IP es {{ user_ip }}</li>
+            </ol>
+        </nav>
+    {% else %}
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page"><a href="{{ url_for('index') }}">Ir a inicio</a></li>
+            </ol>
+        </nav>
+    {% endif %}
+
+
 
     {% for message in get_flashed_messages() %}
         <div class="alert alert-success alert-dismissible">
@@ -17,8 +44,12 @@
         </div>
     {% endfor %}
 
-    {% block content %} {% endblock %}
+    <!-- Your page content -->
+    {% block content %}{% endblock %}
+
     {% block scripts %}
-        {{super()}}
+    <!-- Optional JavaScript -->
+    {{ bootstrap.load_js() }}
     {% endblock %}
-{% endblock %}
+  </body>
+</html>
