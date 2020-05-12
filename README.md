@@ -93,4 +93,10 @@ Deploy
   <small><p>FireStore</p></small>
 </div>
 
+# License
 
+GNU General Public License v3.0
+
+# How to contribute
+
+Send me a Pull Request or contact me as eocode in social media
